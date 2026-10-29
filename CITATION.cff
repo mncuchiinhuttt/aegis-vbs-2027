@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below once its final reference is available."
+title: "AEGIS: Adaptive, Evidence-Grounded Interactive Search"
+type: software
+license: MIT
+repository-code: "https://github.com/mncuchiinhuttt/aegis-vbs-2027"
+url: "https://aegis.mncuchiinhuttt.dev/"
+abstract: >-
+  Interactive video retrieval system for the Video Browser Showdown (VBS) 2027:
+  WeMM-Embedding-4B retrieval with Qdrant HNSW and reciprocal rank fusion,
+  conversational refinement, evidence-aware VQA with abstention and intra-video browsing.
+authors:
+  - family-names: Vo
+    given-names: Long Minh
+    orcid: "https://orcid.org/0009-0002-8449-7669"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam; CBT's Science, Engineering and Technology Club (CSET), Ben Tre High School for Gifted Students"
+  - family-names: Vu
+    given-names: Gia-Hung
+    orcid: "https://orcid.org/0009-0009-5704-0162"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam"
+  - family-names: Tran
+    given-names: Danh Kim
+    orcid: "https://orcid.org/0009-0006-7278-4336"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam"
+  - family-names: Nguyen
+    given-names: Huynh-Minh-Khoa
+    orcid: "https://orcid.org/0009-0003-3762-8838"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam"
+  - family-names: Tran
+    given-names: Kien Vi
+    orcid: "https://orcid.org/0009-0006-8454-1227"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam"
+  - family-names: Chau
+    given-names: Thi-Tuyet-Trang
+    orcid: "https://orcid.org/0000-0003-0102-7427"
+    affiliation: "School of Science, Engineering and Technology (SSET), RMIT University Vietnam"
+preferred-citation:
+  type: conference-paper
+  title: "AEGIS: Adaptive, Evidence-Grounded Interactive Search for Video Moment Retrieval"
+  authors:
+    - family-names: Vo
+      given-names: Long Minh
+    - family-names: Vu
+      given-names: Gia-Hung
+    - family-names: Tran
+      given-names: Danh Kim
+    - family-names: Nguyen
+      given-names: Huynh-Minh-Khoa
+    - family-names: Tran
+      given-names: Kien Vi
+    - family-names: Chau
+      given-names: Thi-Tuyet-Trang
+  collection-title: "MultiMedia Modeling (MMM 2027), Video Browser Showdown special session"
+  publisher:
+    name: "Springer"
+  year: 2027
+  notes: "Accepted; to appear in Springer LNCS. Add volume, pages and DOI when available."

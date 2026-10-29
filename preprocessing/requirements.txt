@@ -1,0 +1,58 @@
+numpy>=1.20.0
+opencv-python>=4.5.0
+torch>=2.4.0
+transformers==5.2.0
+qwen-vl-utils==0.0.14
+scenedetect[opencv]>=0.6.0
+qdrant-client>=1.10.0,<1.11.0
+openai>=1.20.0
+pillow>=9.0.0
+pydantic>=2.0.0
+librosa>=0.10.0
+soundfile>=0.12.0
+# ASR (Whisper large-v3-turbo via CTranslate2). Pulls in ctranslate2, av
+# (bundles FFmpeg libs - no ffmpeg binary needed) and onnxruntime (bundled
+# silero VAD). CTranslate2 is CUDA-or-CPU only - no Apple Silicon MPS.
+faster-whisper>=1.1.0
+requests>=2.25.0
+accelerate>=1.1.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+timm
+einops
+nnAudio
+sentence_transformers
+torchvision
+ultralytics>=8.4.0
+
+# OCR (PP-OCRv6 detection + recognition ensemble member)
+paddlepaddle>=3.0.0
+paddleocr>=3.0.0
+
+# SAM3 region-proposal pre-filter (Promptable Concept Segmentation) - gates
+# both Object Detection and OCR. Gated on Hugging Face: accept the license at
+# https://huggingface.co/facebook/sam3 and set HF_TOKEN before first run.
+# Sam3Model/Sam3Processor need a recent transformers release - bump the pin
+# above (or `pip install -U transformers`) if those classes aren't importable.
+
+# Conditional Super-Resolution (Real-ESRGAN x4) for small OCR crops.
+# Known gotcha: basicsr imports torchvision.transforms.functional_tensor,
+# which newer torchvision releases removed - if `pip install` breaks on this,
+# either pin an older torchvision or patch that import out of basicsr.
+basicsr
+realesrgan
+
+
+# Lightweight CLIP, used only for scene-variance estimation in Adaptive
+# Keyframe Sampling (not the indexing embedding space)
+clip @ git+https://github.com/openai/CLIP.git
+ftfy
+regex
+
+# vLLM (optional): only needed on the machine self-hosting the local VLM for
+# batch inference (see host_vllm.sh). Requires an NVIDIA/AMD GPU - does not
+# install/run on Apple Silicon or CPU-only machines, so it's intentionally
+# not a hard dependency here. Install separately on that host:
+#   pip install vllm

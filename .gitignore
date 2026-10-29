@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local configuration (templates stay tracked)
+.env
+.env.*
+!.env.template
+*.curlrc
+
+# Downloaded models, datasets and binaries
+/weights/
+/datasets/
+/bin/
+.download_assets_deps/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.snapshot
+*.mp4
+*.wav
+
+# NTT's M2D runtime is fetched by download_assets.py (evaluation-only licence, not redistributed)
+/models/portable_m2d.py
+
+# Runtime state and outputs
+*.log
+temp/
+webapp/backend/logs/
+preprocessing/qdrant_storage/
+preprocessing/qdrant_bin/
+preprocessing/.qdrant-initialized
+qdrant_storage/
+queries/batch_results.*
+evaluation/eval_results.json
+results/
+
+# Frontend build output (webapp/frontend/.gitignore covers node_modules)
+webapp/frontend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
