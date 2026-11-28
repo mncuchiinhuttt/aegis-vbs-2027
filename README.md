@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="AEGIS: Adaptive, Evidence Grounded Interactive Search (VBS 2027)" width="100%" />
+</p>
+
 # AEGIS - Adaptive, Evidence-Grounded Interactive Search (VBS 2027)
 
 Research code for **AEGIS**, our interactive video retrieval system for the [Video Browser Showdown (VBS) 2027](https://videobrowsershowdown.org/call-for-papers/) at MMM 2027. Project page: <https://aegis.mncuchiinhuttt.dev/>. Authors and citation: [`CITATION.cff`](CITATION.cff). See [`VBS_GUIDE.md`](VBS_GUIDE.md) for a competition reference (task types, scoring, DRES, datasets).
